@@ -14,16 +14,16 @@ public class Ball : MonoBehaviour
     private void Start()
     {
         ResetPostion();
+        AddIntialForce();
     }
 
     public void ResetPostion()
     {
         _ballRigidbody2D.position = Vector3.zero;
         _ballRigidbody2D.velocity = Vector3.zero;
-        AddIntialForce();
     }
 
-    private void AddIntialForce()
+    public void AddIntialForce()
     {
         float x = Random.value < 0.5f ? -1.0f : 1.0f;
         float y = Random.value < 0.5f ? Random.Range(-1.0f, -0.5f) : Random.Range(0.5f, 1.0f);
