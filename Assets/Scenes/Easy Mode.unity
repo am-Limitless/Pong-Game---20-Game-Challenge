@@ -428,8 +428,8 @@ GameObject:
   - component: {fileID: 265540921}
   - component: {fileID: 265540920}
   - component: {fileID: 265540919}
-  - component: {fileID: 265540923}
   - component: {fileID: 265540924}
+  - component: {fileID: 265540925}
   m_Layer: 0
   m_Name: AI Paddle
   m_TagString: Untagged
@@ -576,21 +576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2048036399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &265540923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265540918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79baee8b237008f45b1b675c1964f099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  ball: {fileID: 971020826}
-  paddleHit: {fileID: 158855022}
 --- !u!114 &265540924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +588,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c333493a118d74aabae2c32d881aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 10
+  bounceForce: 15
+--- !u!114 &265540925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265540918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c55bf4ef2b36e344927a5ab6984dfee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  ball: {fileID: 971020826}
+  paddleHit: {fileID: 158855022}
 --- !u!1 &458074499
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d3989698f442640852da978d10322a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
   paddleHit: {fileID: 158855022}
 --- !u!114 &494352618
 MonoBehaviour:
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c333493a118d74aabae2c32d881aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 10
+  bounceForce: 15
 --- !u!1 &508343137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &563680172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 971020825}
   playerPaddle: {fileID: 494352617}
-  AiPaddle: {fileID: 265540923}
+  AiPaddle: {fileID: 265540925}
   _playerScoreText: {fileID: 212654658}
   _aiScoreText: {fileID: 818565361}
   playerWin: {fileID: 590913203}
