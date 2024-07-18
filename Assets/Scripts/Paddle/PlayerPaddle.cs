@@ -5,6 +5,8 @@ public class PlayerPaddle : Paddle
 
     private Vector2 _direction;
 
+    public AudioSource paddleHit;
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.W))
@@ -28,6 +30,16 @@ public class PlayerPaddle : Paddle
             _rigidbody.AddForce(_direction * this.speed);
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Ball ball = collision.gameObject.GetComponent<Ball>();
+
+        if (ball != null)
+        {
+            paddleHit.Play();
+        }
     }
 }
 
