@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 3a60862663c93504db6d0f4b756dc2c9
+  - enabled: 1
+    path: Assets/Scenes/2nd Menu.unity
+    guid: dc9c60dc64641e44aa08fa27c97861f7
+  - enabled: 1
+    path: Assets/Scenes/AI MODE.unity
+    guid: eef6f36ccc099ea45b718739f3bc78c9
+  - enabled: 1
+    path: Assets/Scenes/Player Vs Player.unity
+    guid: 0a861b31596cb5647ae67b625b9a50a1
+  - enabled: 1
+    path: Assets/Scenes/Easy Mode.unity
+    guid: c0211f1a0c26d5444962d12a7ded47d1
+  - enabled: 1
     path: Assets/Scenes/Hard Mode.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
